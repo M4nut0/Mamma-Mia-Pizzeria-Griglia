@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria bella Napoli</title>
+    <title>Pizzeria Mamma Mia</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         /* Nasconde le schede non attive */
         .tm-tab-content {
             display: none;
         }
+
         .tm-tab-content.active {
             display: block;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <!-- Header -->
         <header class="tm-header">
             <div class="tm-header-inner">
                 <span class="tm-site-icon">☕</span>
-                <h1 class="tm-site-title">Pizzeria bella Napoli</h1>
+                <h1 class="tm-site-title">Pizzeria Mamma Mia</h1>
             </div>
         </header>
 
         <!-- Navigation Tabs -->
         <nav class="tm-nav">
             <ul class="tm-nav-ul">
-                <li class="tm-nav-li"><a href="#Pizze" class="tm-nav-link active" onclick="openTab(event, 'Pizze')">Pizze</a></li>
-                <li class="tm-nav-li"><a href="#Dolci" class="tm-nav-link" onclick="openTab(event, 'Dolci')">Dolci</a></li>
-                <li class="tm-nav-li"><a href="#Bevande" class="tm-nav-link" onclick="openTab(event, 'Bevande')">Bevande</a></li>
-                <li class="tm-nav-li"><a href="#Antipasti" class="tm-nav-link" onclick="openTab(event, 'Antipasti')">Antipasti</a></li>
+                <li class="tm-nav-li"><a href="#Pizze" class="tm-nav-link active"
+                        onclick="openTab(event, 'Pizze')">Pizze</a></li>
+                <li class="tm-nav-li"><a href="#Dolci" class="tm-nav-link" onclick="openTab(event, 'Dolci')">Dolci</a>
+                </li>
+                <li class="tm-nav-li"><a href="#Bevande" class="tm-nav-link"
+                        onclick="openTab(event, 'Bevande')">Bevande</a></li>
+                <li class="tm-nav-li"><a href="#Antipasti" class="tm-nav-link"
+                        onclick="openTab(event, 'Antipasti')">Antipasti</a></li>
             </ul>
         </nav>
 
@@ -155,8 +162,39 @@
                     <div class="tm-list-item">
                         <img src="img/espresso.png" alt="Image" class="tm-list-item-img">
                         <div class="tm-black-bg tm-list-item-text">
-                            <h3 class="tm-list-item-name">Caff&egrave; Espresso <span class="tm-list-item-price">&euro;2.50</span></h3>
+                            <h3 class="tm-list-item-name">Caff&egrave; Espresso <span
+                                    class="tm-list-item-price">&euro;2.50</span></h3>
                             <p class="tm-list-item-description">Miscela arabica di qualit&agrave; superiore. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- elenco antipasti -->
+            <div id="Antipasti" class="tm-tab-content">
+                <div class="tm-list">
+                    <div class="tm-list-item">
+                        <img src="img/fritti.jpg" alt="antipasto fritti" class="tm-list-item-img">
+                        <div class="tm-black-bg tm-list-item-text">
+                            <h3 class="tm-list-item-name">Antipasto di Fritti <span
+                                    class="tm-list-item-price">&euro;6.50</span></h3>
+                        </div>
+                    </div>
+
+                    <!-- Secondo elemento: Patatine -->
+                    <div class="tm-list-item">
+                        <img src="img/patatine.jpg" alt="Patatine Fritte" class="tm-list-item-img">
+                        <div class="tm-black-bg tm-list-item-text">
+                            <h3 class="tm-list-item-name">Patatine Fritte<span
+                                    class="tm-list-item-price">&euro;5.00</span></h3>
+                        </div>
+                    </div>
+
+                    <!-- Terzo elemento: Supplì -->
+                    <div class="tm-list-item">
+                        <img src="img/suppli.jpg" alt="Suppli" class="tm-list-item-img">
+                        <div class="tm-black-bg tm-list-item-text">
+                            <h3 class="tm-list-item-name">Supplì<span
+                                    class="tm-list-item-price">&euro;2.00</span></h3>
                         </div>
                     </div>
                 </div>
@@ -183,4 +221,5 @@
         }
     </script>
 </body>
+
 </html>
